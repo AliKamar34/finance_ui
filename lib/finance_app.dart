@@ -1,3 +1,5 @@
+import 'package:finance_app/core/themes/theme_data.dart';
+import 'package:finance_app/features/onBoarding/views/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 
 class FinanceApp extends StatelessWidget {
@@ -6,11 +8,9 @@ class FinanceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Scaffold(),
+      theme: AppTheme.lightTheme,
+      debugShowCheckedModeBanner: false,
+      home: OnBoardingView(),
     );
   }
 }
