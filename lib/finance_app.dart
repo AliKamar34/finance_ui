@@ -1,5 +1,5 @@
+import 'package:finance_app/core/routing/router_generation_config.dart';
 import 'package:finance_app/core/themes/theme_data.dart';
-import 'package:finance_app/features/onBoarding/views/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 
 class FinanceApp extends StatelessWidget {
@@ -7,10 +7,10 @@ class FinanceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       theme: AppTheme.lightTheme,
       debugShowCheckedModeBanner: false,
-      home: OnBoardingView(),
+      routerConfig: RouterGenerationConfig.goRoute,
     );
   }
 }

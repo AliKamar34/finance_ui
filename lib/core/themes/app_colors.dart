@@ -7,4 +7,5 @@ class AppColors {
   static const whiteTextColor = Color(0xffFDFDFD);
   static const whiteColor = Colors.white;
   static const greyColor = Color(0xffF7F8F9);
+  static const borderColor = Color(0xffE8ECF4);
 }

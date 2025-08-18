@@ -8,13 +8,19 @@ class CustomTextFeild extends StatelessWidget {
     required this.hint,
     this.icon,
     this.isPassword,
+    this.validator,
+    this.controller,
   });
   final String hint;
   final Widget? icon;
   final bool? isPassword;
+  final TextEditingController? controller;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      validator: validator,
       cursorColor: AppColors.secondaryColor,
       obscureText: isPassword ?? false,
       decoration: InputDecoration(
@@ -23,7 +29,12 @@ class CustomTextFeild extends StatelessWidget {
         border: borderBuilder(),
         enabledBorder: borderBuilder(),
         focusedBorder: borderBuilder(),
-
+        errorBorder: borderBuilder().copyWith(
+          borderSide: BorderSide(color: Colors.red),
+        ),
+        focusedErrorBorder: borderBuilder().copyWith(
+          borderSide: BorderSide(color: Colors.red),
+        ),
         hintText: hint,
         hintStyle: AppTextStyle.styleMedium15(context),
         suffixIcon: icon,
@@ -34,8 +45,9 @@ class CustomTextFeild extends StatelessWidget {
 
   OutlineInputBorder borderBuilder() {
     return OutlineInputBorder(
+      gapPadding: 18,
       borderRadius: BorderRadius.circular(8),
-      borderSide: BorderSide(color: AppColors.secondaryColor),
+      borderSide: BorderSide(color: AppColors.borderColor),
     );
   }
 }
