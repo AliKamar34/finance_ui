@@ -1,7 +1,10 @@
 import 'package:finance_app/core/constants/app_assets.dart';
 import 'package:finance_app/core/themes/app_colors.dart';
 import 'package:finance_app/core/themes/app_text_style.dart';
+import 'package:finance_app/features/home/presentation/views/all_cards_view.dart';
 import 'package:finance_app/features/home/presentation/views/home_view.dart';
+import 'package:finance_app/features/home/presentation/views/profile_view.dart';
+import 'package:finance_app/features/home/presentation/views/statistic_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -16,26 +19,14 @@ class _NavBarViewState extends State<NavBarView> {
   int currIndex = 0;
   final List<Widget> pages = [
     HomeView(),
-    Container(
-      color: Colors.black,
-      width: double.infinity,
-      height: double.infinity,
-    ),
-    Container(
-      color: Colors.blue,
-      width: double.infinity,
-      height: double.infinity,
-    ),
+    StatisticView(),
     Container(
       color: Colors.orange,
       width: double.infinity,
       height: double.infinity,
     ),
-    Container(
-      color: Colors.yellow,
-      width: double.infinity,
-      height: double.infinity,
-    ),
+    AllCardsView(),
+    ProfileView(),
   ];
   @override
   Widget build(BuildContext context) {

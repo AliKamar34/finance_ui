@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CustomCircleContainer extends StatelessWidget {
-  const CustomCircleContainer({super.key, required this.iconsPath});
+  const CustomCircleContainer({
+    super.key,
+    required this.iconsPath,
+    this.padding,
+  });
   final String iconsPath;
+  final double? padding;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,7 +18,7 @@ class CustomCircleContainer extends StatelessWidget {
         border: Border.all(color: AppColors.borderColor),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: EdgeInsets.all(padding ?? 12),
         child: SvgPicture.asset(iconsPath),
       ),
     );

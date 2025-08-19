@@ -10,7 +10,7 @@ class CardItem extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8,
       margin: EdgeInsets.symmetric(horizontal: 5.0),
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 18),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [AppColors.blackTextColor, AppColors.primaryColor],
