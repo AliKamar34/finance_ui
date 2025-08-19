@@ -5,4 +5,6 @@ class AppRoutes {
   static const String forgetPassword = '/forgetPassword';
   static const String passwordChanged = '/passwordChanged';
   static const String createNewPassword = '/createNewPassword';
+  static const String otpVerification = '/otpVerification';
+  static const String home = '/home';
 }

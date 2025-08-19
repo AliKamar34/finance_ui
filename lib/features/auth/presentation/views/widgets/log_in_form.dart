@@ -34,7 +34,12 @@ class LogInForm extends StatelessWidget {
             ],
           ),
           SizedBox(height: 30),
-          CustomButton(title: 'Log in', onPressed: () {}),
+          CustomButton(
+            title: 'Log in',
+            onPressed: () {
+              context.pushNamed(AppRoutes.otpVerification);
+            },
+          ),
           SizedBox(height: 35),
         ],
       ),
