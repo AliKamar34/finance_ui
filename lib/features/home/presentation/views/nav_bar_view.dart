@@ -1,6 +1,7 @@
 import 'package:finance_app/core/constants/app_assets.dart';
 import 'package:finance_app/core/themes/app_colors.dart';
 import 'package:finance_app/core/themes/app_text_style.dart';
+import 'package:finance_app/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -14,11 +15,7 @@ class NavBarView extends StatefulWidget {
 class _NavBarViewState extends State<NavBarView> {
   int currIndex = 0;
   final List<Widget> pages = [
-    Container(
-      color: Colors.red,
-      width: double.infinity,
-      height: double.infinity,
-    ),
+    HomeView(),
     Container(
       color: Colors.black,
       width: double.infinity,
