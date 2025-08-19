@@ -102,7 +102,7 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
   if (width <= 400) {
-    return 0.9;
+    return 0.85;
   } else if (width <= 800) {
     return 1.0;
   } else if (width <= 1200) {

@@ -5,7 +5,7 @@ class AppAssets {
   static const String appleLogo = 'assets/images/apple.svg';
   static const String success = 'assets/images/success.svg';
   static const String chart = 'assets/icons/Chart.svg';
-  static const String download = 'assets/icons/Downloads.svg';
+  static const String download = 'assets/icons/Download.svg';
   static const String editSquare = 'assets/icons/EditSquare.svg';
   static const String groupUser = 'assets/icons/GroupUser.svg';
   static const String home = 'assets/icons/Home.svg';

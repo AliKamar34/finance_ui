@@ -20,11 +20,7 @@ class _NavBarViewState extends State<NavBarView> {
   final List<Widget> pages = [
     HomeView(),
     StatisticView(),
-    Container(
-      color: Colors.orange,
-      width: double.infinity,
-      height: double.infinity,
-    ),
+    SizedBox(),
     AllCardsView(),
     ProfileView(),
   ];
