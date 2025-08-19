@@ -1,4 +1,4 @@
-# Finance App 💰
+# Finance App (UI) 💰
 
 A modern and intuitive Flutter application designed to help you manage your personal finances with ease. Track your expenses, monitor your budget, and gain insights into your spending habits through a clean and visually appealing interface.
 
@@ -8,7 +8,6 @@ This project is built with a feature-first architecture, clean code principles, 
 
 - **Secure Authentication:** Full auth flow including Sign Up, Login, and Forgot Password using email.
 - **Social Sign-On:** Quick authentication using Google, Facebook, and Apple.
-- **Onboarding:** A simple and clean onboarding experience for new users.
 - **Dashboard:** A central home screen with a quick look at your card balances and access to common actions.
 - **Card Management:** View all your credit/debit cards in a swipeable carousel and a detailed list view.
 - **Financial Statistics:** An interactive bar chart to visualize your monthly income and outcome.
@@ -22,7 +21,7 @@ This project is built with a feature-first architecture, clean code principles, 
  | Login | ForgetPassword | ResetPassword| OTP | Home | Statistics | AllCards | Profile |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
-| <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/logIn.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/forgetPassword.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/resetPassword.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/otp.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/home.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/statistics.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/allCard.png" width="200"> | <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/Profile.png" width="200"> |
+<img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/logIn.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/forgetPassword.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/resetPassword.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/otp.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/home.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/statistics.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/allCard.png" width="200">  <img src="https://github.com/AliKamar34/finance_ui/blob/main/assets/screenshots/Profile.png" width="200"> 
 
 ## 🛠️ Tech Stack & Key Libraries
 
@@ -80,3 +79,4 @@ lib/
 ├── finance_app.dart       # Root MaterialApp widget
 └── main.dart              # Application entry point
 ```
+
