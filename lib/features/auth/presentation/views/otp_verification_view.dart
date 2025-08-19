@@ -1,9 +1,11 @@
+import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/core/themes/app_colors.dart';
 import 'package:finance_app/core/themes/app_text_style.dart';
 import 'package:finance_app/core/widgets/custom_button.dart';
 import 'package:finance_app/features/auth/presentation/views/widgets/custom_arrow_back.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class OtpVerificationView extends StatelessWidget {
@@ -59,7 +61,12 @@ class OtpVerificationView extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 32),
-                CustomButton(title: 'Verify', onPressed: () {}),
+                CustomButton(
+                  title: 'Verify',
+                  onPressed: () {
+                    context.pushNamed(AppRoutes.navBarView);
+                  },
+                ),
                 SizedBox(height: 20),
 
                 Align(

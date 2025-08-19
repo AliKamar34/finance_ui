@@ -1,9 +1,11 @@
+import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/core/themes/app_colors.dart';
 import 'package:finance_app/core/themes/app_text_style.dart';
 import 'package:finance_app/core/widgets/custom_button.dart';
 import 'package:finance_app/core/widgets/custom_text_feild.dart';
 import 'package:finance_app/features/auth/presentation/views/widgets/custom_arrow_back.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ForgetPasswordView extends StatelessWidget {
   const ForgetPasswordView({super.key});
@@ -40,7 +42,12 @@ class ForgetPasswordView extends StatelessWidget {
                 ),
                 CustomTextFeild(hint: 'Enter your email'),
                 SizedBox(height: 38),
-                CustomButton(title: 'Send Code', onPressed: () {}),
+                CustomButton(
+                  title: 'Send Code',
+                  onPressed: () {
+                    context.pushNamed(AppRoutes.createNewPassword);
+                  },
+                ),
               ],
             ),
           ),

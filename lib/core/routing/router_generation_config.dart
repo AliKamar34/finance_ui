@@ -5,6 +5,7 @@ import 'package:finance_app/features/auth/presentation/views/log_in_view.dart';
 import 'package:finance_app/features/auth/presentation/views/otp_verification_view.dart';
 import 'package:finance_app/features/auth/presentation/views/password_changed_view.dart';
 import 'package:finance_app/features/auth/presentation/views/sign_up_view.dart';
+import 'package:finance_app/features/home/presentation/views/nav_bar_view.dart';
 import 'package:finance_app/features/onBoarding/views/on_boarding_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -46,6 +47,11 @@ class RouterGenerationConfig {
         path: AppRoutes.otpVerification,
         name: AppRoutes.otpVerification,
         builder: (context, state) => const OtpVerificationView(),
+      ),
+      GoRoute(
+        path: AppRoutes.navBarView,
+        name: AppRoutes.navBarView,
+        builder: (context, state) => const NavBarView(),
       ),
     ],
   );

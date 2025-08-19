@@ -19,6 +19,7 @@ class PasswordChangedView extends StatelessWidget {
 
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SvgPicture.asset(AppAssets.success),
               SizedBox(height: 35),

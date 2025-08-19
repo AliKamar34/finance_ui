@@ -1,6 +1,8 @@
+import 'package:finance_app/core/routing/app_routes.dart';
 import 'package:finance_app/core/widgets/custom_button.dart';
 import 'package:finance_app/core/widgets/custom_text_feild.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CreateNewPasswordForm extends StatelessWidget {
   const CreateNewPasswordForm({super.key});
@@ -23,7 +25,12 @@ class CreateNewPasswordForm extends StatelessWidget {
           ),
 
           SizedBox(height: 38),
-          CustomButton(title: 'Reset Password', onPressed: () {}),
+          CustomButton(
+            title: 'Reset Password',
+            onPressed: () {
+              context.pushNamed(AppRoutes.passwordChanged);
+            },
+          ),
         ],
       ),
     );
